@@ -69,13 +69,16 @@
       "source": "./modules/aws_iam_role_policy"
     },
     "appcd_b71fd16c-797e-5a95-8e1b-ab22f1e34f43": {
-      "assume_role_policy": "{\n\t\t\"Version\": \"2012-10-17\",\n\t\t\"Statement\":{\n\t\t\t\t\"Action\": \"sts:AssumeRole\",\n\t\t\t\t\"Effect\": \"Allow\",\n\t\t\t\t\"Principal\": {\n\t\t\t\t\t\"Service\": \"lambda.amazonaws.com\"\n\t\t\t\t}\n\t\t\t}\n\t}",
+      "assume_role_policy": "{\n\t\"Version\": \"2012-10-17\",\n\t\"Statement\": {\n\t\t\"Action\": \"sts:AssumeRole\",\n\t\t\"Effect\": \"Allow\",\n\t\t\"Principal\": {\n\t\t\t\"Service\": \"lambda.amazonaws.com\"\n\t\t}\n\t}\n}",
       "description": null,
       "force_detach_policies": true,
       "inline_policy": [],
-      "name": "hello-kitty-role",
+      "name": "hello-kitty-role-123",
       "source": "./modules/aws_iam_role",
-      "tags": null
+      "tags": {
+        "appstack": "jagaa",
+        "component": "hello-kitty"
+      }
     }
   }
 }
